@@ -31,7 +31,7 @@ The solution follows the API specification provided in the challenge:
 
 ## Setup and Running
 
-1. Clone the repository to your local machine.
+1. Clone the repository to your local machine
 2. In order to run the app, use docker command: **docker build -t receipt-processor-app .**
 3. Then, **docker run -p 3000:3000 receipt-processor-app**
 4. The server should be running now on Port: 3000
