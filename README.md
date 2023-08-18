@@ -35,9 +35,11 @@ The solution follows the API specification provided in the challenge:
 2. In order to run the app, use docker command: **docker build -t receipt-processor-app .**
 3. Then, **docker run -p 3000:3000 receipt-processor-app**
 4. The server should be running now on Port: 3000
-5. Now, a POST request can be made to **http://localhost:3000/receipts/process** with the receipts data in the request body
-6. After getting the id, a GET request can be made to **http://localhost:3000/receipts/{id}/points** to get the points for a receipt id
-7. Stop and remove this docker container
+5. Now, a POST request can be made (with tools like Postman or Curl) to **http://localhost:3000/receipts/process** with the receipts data in the request body
+   <img width="1432" alt="image" src="https://github.com/shahkaran53527/Receipt-Processor-Challenge/assets/79335738/0dba70b1-ab71-4d5d-a9f8-6c66e7d82d79">
+7. After getting the id, a GET request can be made to **http://localhost:3000/receipts/{id}/points** to get the points for a receipt id
+<img width="1435" alt="image" src="https://github.com/shahkaran53527/Receipt-Processor-Challenge/assets/79335738/3c7732bd-54d1-4854-a8a9-2472c9e26e63">
+8. Stop and remove this docker container
 
 ## Testing
 1. For testing the code, run: **docker build -t receipt-processor-app-test -f Dockerfile.test .**
